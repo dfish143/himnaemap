@@ -1,0 +1,638 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>방명록</title>
+
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S87F4R5L4K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-S87F4R5L4K');
+  </script>
+
+  <!-- Pretendard -->
+  <style>
+    @font-face { font-family: 'Pretendard'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+    @font-face { font-family: 'Pretendard'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2') format('woff2'); font-weight: 700; font-display: swap; }
+  </style>
+
+  <style>
+
+    body { font-family: 'Pretendard', sans-serif; background: #fff; margin: 0; padding: 0; letter-spacing: -.02rem; font-size: 15px;}
+    
+    button,input,textarea{ font-family: 'Pretendard', sans-serif;letter-spacing: -.02rem; font-size: 15px;}
+    .comment-section { max-width: 760px; margin: 27px auto; padding: 24px; background: #fff; }
+    .comment-section h2 { font-size: 15px; margin: 0 0 5px; }
+
+
+/* 헤더 */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: #ffffffb8;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 18%);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.header_title {
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    position: absolute;
+    width: 102px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1px;
+}
+
+.header_title img {
+    width: 100%;
+}
+    .header_left { position: absolute; left: 12px; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; color: #444; cursor: pointer; transition: background-color 0.2s ease, color 0.2s ease; }
+    .header_left:hover { background: #f0f0f0; color: #111; }
+
+.header_left:hover {
+    transition: ease-in-out 0.2s;
+    filter: brightness(125%);
+}
+
+    /* 메인 폼 */
+    #commentForm { margin-top: 8px; padding-bottom: 45px; }
+    .compact-form { display: grid; grid-template-columns: 20% 1fr; gap: 6px; align-items: stretch; height: 80px; }
+    .fields-col { display: grid; grid-template-rows: 1fr 1fr; gap: 6px; height: 100%; }
+    .field-box {  border-radius: 4px; padding: 6px 8px; box-sizing: border-box; background: #f3f3f3; display: flex; align-items: center; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease; }
+    .field-box input { width: 100%; border: none; background: transparent; font-size: 11px; outline: none; height: 100%; }
+    .field-box input[readonly] { background: #f3f3f3; color: #888; }
+    .content-box { border-radius: 8px; background: #f3f3f3; padding: 12px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px; height: 100%; min-height: 0; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease; }
+    .content-box textarea { width: 100%; border: none; resize: none; outline: none; font-size: 12px; background: transparent; flex: 1; min-height: 100%; font-family: 'Pretendard', sans-serif; }
+    .content-actions {position: relative; right: -10px; display: flex; justify-content: flex-end; gap: 8px; align-items: center;    margin-top: 5px; }
+    .fa-ellipsis-h:before, .fa-ellipsis:before {opacity: 0.6;
+}    .submit-btn { position: relative; padding: 8px 13px; border: none; background: #333; color: #fff; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 13px; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease; }
+    
+    .submit-btn .btn-spinner { width: 14px; height: 14px; border: 2px solid #cde0ff; border-top-color: #fff; border-radius: 50%; display: inline-block; margin-left: 8px; animation: spin 0.8s linear infinite; vertical-align: middle; }
+    .submit-btn.loading { opacity: 0.8; cursor: not-allowed; }
+    .submit-btn.loading .btn-text { display: none; }
+@media (hover: hover) {  .submit-btn:hover {     background: #ff0099;   }}
+    .cancel-btn { padding: 8px 13px; border: 1px solid #ccc; background: #fff; border-radius: 6px; cursor: pointer; font-size: 13px; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease; }
+    .cancel-btn:hover { background: #f7f7f7; }
+
+    /* 리스트 */
+    #commentList { list-style: none; padding: 0; margin: 20px 0 0; }
+    #commentList li { border-bottom: 1px solid #f3f3f3; padding: 15px 0; }
+    #commentList li.reply { margin-left: 10px;/*  border-left: 3px solid #eaeaea;  */padding-left: 10px; }
+    #commentList .inline-holder { padding: 0; }
+    #commentList li.inline-open .inline-holder { padding: 20px 10px 50px 10px; }
+
+    .comment-card { position: relative; display: flex; flex-direction: column; gap: 8px; }
+    .comment-top { display: flex; gap: 10px; align-items: flex-start; justify-content: space-between; }
+    .comment-main { display: flex; gap: 10px; align-items: flex-start; flex: 1; min-width: 0; }
+    .avatar { width: 36px; height: 36px; border-radius: 50%; background: #ddd; color: #333; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px; }
+    .body-wrap { flex: 1; min-width: 0; word-break: break-word; overflow-wrap: anywhere; }
+    .nickname-row { display: flex; gap: 8px; align-items: center; margin-bottom: 4px; }
+    .nickname {  display:inline-block;
+  max-width:20ch;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-weight: 700; font-family: 'Pretendard', sans-serif; font-size: 14px;}
+    .meta-inline { font-size: 11px; color: #888; font-weight: 400; font-family: 'Pretendard', sans-serif; }
+    .actions { display: flex; gap: 7px; align-items: center; margin-top: 10px; }
+    .actions button { left: -7px; position: relative; border: none; border-radius: 6px; background: #fff; cursor: pointer; display: inline-flex; align-items: center; color: #a7a7a7; padding: 6px 8px; overflow: hidden; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease; }
+    .actions button::after { content: ""; position: absolute; inset: 0; padding: 10px; background: transparent; border-radius: 8px; transition: background-color 0.2s ease, padding 0.2s ease; z-index: -1; }
+    .actions button:hover { background: #f7f7f7; }
+    .actions button:hover::after { background: #dfdfdf; }
+    .comment-text { font-weight: 400; color: #333; font-family: 'Pretendard', sans-serif; font-size: 13px; word-break: break-word; overflow-wrap: anywhere; white-space: pre-wrap; }
+    .like-btn { color: #a7a7a7; }
+    .like-btn i { transition: color 0.2s ease, transform 0.2s ease; }
+    .like-btn .like-count { margin-left: 4px; font-size:11px; color: #666; font-family: 'Pretendard', sans-serif; }
+    .like-btn.liked i { color: #ff0099; }
+    .like-btn.pulse i { animation: like-pop 0.3s ease; }
+    @keyframes like-pop { 0% { transform: scale(1); } 50% { transform: scale(1.3); } 100% { transform: scale(1); } }
+    .more-wrap { position: relative; }
+    .more-btn { border: none; background: transparent; cursor: pointer; color: #666; padding: 6px; border-radius: 8px; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease; }
+    .more-btn:hover { background: #f2f2f2; }
+    .more-menu { position: absolute; top: 32px; right: 0; background: #fff; border: 1px solid #e6e6e6; border-radius: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); min-width: 120px; z-index: 5; display: none; overflow: hidden; }
+    .more-menu.open { display: block; }
+    .more-menu button { width: 100%; text-align: left; border: none; background: #fff; padding: 10px 12px; cursor: pointer; color: #333; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease; }
+    .more-menu button:hover { background: #f7f7f7; }
+    .deleted { color: #999; font-weight: 600; }
+    .spinner { width: 16px; height: 16px; border: 2px solid #ccc; border-top-color: #111; border-radius: 50%; display: inline-block; animation: spin 0.8s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+   
+
+    .header_left { position: absolute; left: 8px; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 35px; border-radius: 50%; color: #444; cursor: pointer; transition: background-color 0.2s ease, color 0.2s ease; }
+    .header_left:hover { background: #f0f0f0; color: #111; }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="header_left" id="backBtn" title="뒤로가기"><i class="fa-solid fa-angle-left "></i></a>
+    <a class="header_title">방명록</a>
+  </header>
+  <section class="comment-section">
+
+    <p style="margin: 0 0 16px;line-height: 1.5;color: #777;font-size: 12px;">장소제보 (상호명,주소,영상기재), 수정요청 등 의견을 남겨주세요!<br>⚠️'힘내맵'은 팬 메이드 사이트 입니다. 업체정보가 변경될 수 있으니 확인 후 방문바랍니다. <br>(기타 문의 : devfish143@gmail.com)</p>
+
+    <!-- 메인 작성 폼 -->
+    <form id="commentForm" data-mode="new">
+      <div class="compact-form">
+        <div class="fields-col">
+          <div class="field-box"><input maxlength="10" name="nickname" autocomplete="nickname" placeholder="닉네임" required></div>
+          <div class="field-box"><input maxlength="10" name="password" type="password" autocomplete="current-password" placeholder="비밀번호" required></div>
+        </div>
+        <div class="content-box">
+          <textarea maxlength="500" name="content" placeholder="의견 남기기" required></textarea>
+          <div class="content-actions">
+            <button type="submit" id="submitBtn" class="submit-btn"><span class="btn-text">남기기</span> <span class="btn-spinner" style="display:none;"></span></button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <ul id="commentList"></ul>
+  </section>
+
+  <!-- 답글/수정 공용 템플릿 -->
+  <template id="inline-template">
+    <form class="inline-form" data-mode="reply">
+      <div class="compact-form" style="height:80px;">
+        <div class="fields-col">
+          <div class="field-box"><input maxlength="10" name="nickname" autocomplete="nickname" placeholder="닉네임" required></div>
+          <div class="field-box"><input maxlength="10" name="password" type="password" autocomplete="current-password" placeholder="비밀번호" required></div>
+        </div>
+        <div class="content-box">
+          <textarea maxlength="500" name="content" placeholder="의견 남기기" required></textarea>
+          <div class="content-actions">
+            <button type="button" class="cancel-btn">취소</button>
+            <button type="submit" class="submit-btn action-label"><span class="btn-text">답글달기</span> <span class="btn-spinner" style="display:none;"></span></button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </template>
+
+  <script type="module">
+    // Firebase 설정
+    const firebaseConfig = {
+      apiKey: "AIzaSyC_ty_aev1ArQpZ3wh4XjyMz5mqjQ9d9OQ",
+      authDomain: "himnaemap.firebaseapp.com",
+      projectId: "himnaemap",
+      appId: "1:524657685500:web:56455ffc5d1b3f954e7879",
+    };
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import {
+      getFirestore, collection, addDoc,
+      getDocs, query, orderBy, serverTimestamp,
+      updateDoc, doc, increment
+    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    const list = document.getElementById("commentList");
+    const mainForm = document.getElementById("commentForm");
+    const submitBtn = document.getElementById("submitBtn");
+    const inlineTpl = document.getElementById("inline-template");
+    const backBtn = document.getElementById("backBtn");
+    const MASTER_HASH = "9abc7d85c8ba6c7ec8ab7b740903fb09e8f8da4cf28f3b5975240862254e2770"; // "glasoaos"
+    let commentsCache = {};
+    const LIKE_KEY = "comment_likes_v1";
+    let likedSet = new Set();
+
+    if (backBtn) {
+      backBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (history.length > 1) {
+          history.back();
+        } else {
+          window.location.href = "index.html";
+        }
+      });
+    }
+
+    const loadLiked = () => {
+      try {
+        likedSet = new Set(JSON.parse(localStorage.getItem(LIKE_KEY) || "[]"));
+      } catch (e) {
+        likedSet = new Set();
+      }
+    };
+    const saveLiked = () => {
+      try {
+        localStorage.setItem(LIKE_KEY, JSON.stringify(Array.from(likedSet)));
+      } catch (e) {
+        // ignore storage errors
+      }
+    };
+
+    const setMainLoading = (isLoading) => {
+      submitBtn.disabled = isLoading;
+      submitBtn.classList.toggle("loading", isLoading);
+      const spinner = submitBtn.querySelector(".btn-spinner");
+      if (spinner) spinner.style.display = isLoading ? "inline-block" : "none";
+    };
+
+    const setInlineLoading = (form, isLoading) => {
+      const btn = form.querySelector(".submit-btn");
+      const spinner = form.querySelector(".btn-spinner");
+      if (btn) btn.disabled = isLoading;
+      if (btn) btn.classList.toggle("loading", isLoading);
+      if (spinner) spinner.style.display = isLoading ? "inline-block" : "none";
+    };
+
+    const bindCtrlEnterSubmit = (form) => {
+      const textarea = form.querySelector("textarea");
+      if (!textarea) return;
+      textarea.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) {
+          e.preventDefault();
+          const submit = form.querySelector(".submit-btn");
+          submit?.click();
+        }
+      });
+    };
+
+    const toHex = (buffer) => Array.from(new Uint8Array(buffer)).map(b => b.toString(16).padStart(2, "0")).join("");
+    const hashPassword = async (pw) => {
+      const encoded = new TextEncoder().encode(pw);
+      const digest = await crypto.subtle.digest("SHA-256", encoded);
+      return toHex(digest);
+    };
+
+    const formatDate = (ts) => {
+      if (!ts?.toDate) return "";
+      const d = ts.toDate();
+      const yy = String(d.getFullYear()).slice(-2);
+      const mm = d.getMonth() + 1;
+      const dd = d.getDate();
+      let hh = d.getHours();
+      const min = String(d.getMinutes()).padStart(2, "0");
+      const isAm = hh < 12;
+      const period = isAm ? "오전" : "오후";
+      hh = hh % 12;
+      if (hh === 0) hh = 12;
+      const hhStr = String(hh).padStart(2, "0");
+      return `${yy}.${mm}.${dd} ${period} ${hhStr}:${min}`;
+    };
+
+    const closeAllMenus = () => {
+      document.querySelectorAll(".more-menu").forEach(menu => menu.classList.remove("open"));
+      document.querySelectorAll(".more-btn").forEach(btn => btn.setAttribute("aria-expanded", "false"));
+    };
+
+    const render = async () => {
+      loadLiked();
+      const q = query(collection(db, "comments"), orderBy("createdAt", "asc"));
+      const snap = await getDocs(q);
+      list.innerHTML = "";
+      commentsCache = {};
+
+      const items = [];
+      snap.forEach(docSnap => {
+        const c = docSnap.data();
+        const item = { id: docSnap.id, ...c };
+        items.push(item);
+        commentsCache[docSnap.id] = item;
+      });
+
+      const byParent = {};
+      items.forEach(c => {
+        const parent = c.parentId || null;
+        if (!byParent[parent]) byParent[parent] = [];
+        byParent[parent].push(c);
+      });
+
+      const sortDesc = (arr) => arr.sort((a, b) => {
+        const at = a.createdAt?.toMillis?.() || 0;
+        const bt = b.createdAt?.toMillis?.() || 0;
+        return bt - at;
+      });
+
+      const renderItems = (parentId) => {
+        const arr = sortDesc(byParent[parentId] || []);
+        arr.forEach(c => {
+          const isReply = !!parentId;
+          const li = document.createElement("li");
+          if (isReply) li.classList.add("reply");
+          li.dataset.id = c.id;
+          const firstLetter = (c.nickname || "N").trim()[0] || "N";
+          li.innerHTML = `
+            <div class="comment-card">
+              <div class="comment-top">
+                <div class="comment-main">
+                  <div class="avatar">${firstLetter}</div>
+                  <div class="body-wrap">
+                    <div class="nickname-row">
+                      <span class="nickname">${c.nickname || "이름 없음"}</span>
+                      <span class="meta-inline">
+                        ${formatDate(c.createdAt)}
+                        ${c.editedAt ? " · 수정됨" : ""}
+                      </span>
+                    </div>
+                    <div class="comment-text">${c.deleted ? '<span class="deleted">[삭제됨]</span>' : (c.content || "").replace(/\r?\n/g, "<br>")}</div>
+                    ${c.deleted ? "" : `
+                    <div class="actions">
+                      <button class="reply-btn" title="답글"><i class="fa-regular fa-comment"></i></button>
+                      <button class="like-btn ${likedSet.has(c.id) ? "liked" : ""}" title="좋아요">
+                        <i class="${likedSet.has(c.id) ? "fa-solid" : "fa-regular"} fa-heart"></i>
+                        <span class="like-count">${c.likes || 0}</span>
+                      </button>
+                    </div>
+                    `}
+                  </div>
+                </div>
+                ${c.deleted ? "" : `
+                <div class="more-wrap">
+                  <button class="more-btn" title="더보기"><i class="fa-solid fa-ellipsis"></i></button>
+                  <div class="more-menu">
+                    <button class="edit-menu">수정</button>
+                    <button class="delete-menu">삭제</button>
+                  </div>
+                </div>
+                `}
+              </div>
+            </div>
+            <div class="inline-holder"></div>
+          `;
+          list.appendChild(li);
+          renderItems(c.id);
+        });
+      };
+
+      renderItems(null);
+    };
+
+    // 메인 댓글 등록
+    mainForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const data = new FormData(mainForm);
+      const nickname = (data.get("nickname") || "").trim();
+      const password = data.get("password") || "";
+      const content = (data.get("content") || "").trim();
+      if (!nickname || !password || !content) return;
+
+      setMainLoading(true);
+      try {
+        const passwordHash = await hashPassword(password);
+        await addDoc(collection(db, "comments"), {
+          nickname,
+          content,
+          passwordHash,
+          likes: 0,
+          parentId: null,
+          createdAt: serverTimestamp(),
+          deleted: false
+        });
+        // 🔥 디스코드 웹후크 알림 발송
+        fetch("https://discord.com/api/webhooks/1505833581312737311/XdfHIZ8_BL36KyYuYgUCmsdOq3UAmFARXvTN_T-XVkvuwbZlHWOgH20_uBUx0pH9-OH_", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ content: `🔔 [방명록 새글] ${nickname} : ${content}` })
+        }).catch(err => console.error("디스코드 발송 실패:", err));
+
+        mainForm.reset();
+        render();
+      } catch (err) {
+        alert("등록 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.");
+        console.error(err);
+      } finally {
+        setMainLoading(false);
+      }
+    });
+    bindCtrlEnterSubmit(mainForm);
+
+    // 리스트 클릭 핸들러 (답글/수정/삭제 + 메뉴)
+    list.addEventListener("click", async (e) => {
+      const li = e.target.closest("li");
+      if (!li) return;
+      const id = li.dataset.id;
+      const comment = commentsCache[id];
+      if (!comment) return;
+
+      // 더보기
+      if (e.target.closest(".more-btn")) {
+        const menu = li.querySelector(".more-menu");
+        const btn = li.querySelector(".more-btn");
+        if (!menu || !btn) return;
+        const isOpen = menu.classList.contains("open");
+        closeAllMenus();
+        if (!isOpen) {
+          menu.classList.add("open");
+          btn.setAttribute("aria-expanded", "true");
+        }
+        return;
+      }
+
+      // 삭제
+      if (e.target.classList.contains("delete-menu")) {
+        closeAllMenus();
+        const pw = prompt("비밀번호를 입력하세요");
+        if (pw === null) return;
+        const passwordHash = await hashPassword(pw);
+        const isMaster = passwordHash === MASTER_HASH;
+        if (!isMaster && passwordHash !== comment.passwordHash) {
+          alert("비밀번호가 일치하지 않습니다.");
+          return;
+        }
+        try {
+          await updateDoc(doc(db, "comments", id), {
+            passwordHash: isMaster ? MASTER_HASH : comment.passwordHash,
+            content: "[삭제됨]",
+            deleted: true
+          });
+          render();
+        } catch (err) {
+          alert("비밀번호가 일치하지 않거나 삭제 권한이 없습니다.");
+          console.error(err);
+        }
+        return;
+      }
+
+      // 수정
+      if (e.target.classList.contains("edit-menu")) {
+        closeAllMenus();
+        const holder = li.querySelector(".inline-holder");
+        if (!holder) return;
+        holder.innerHTML = "";
+        const form = inlineTpl.content.firstElementChild.cloneNode(true);
+        form.dataset.mode = "edit";
+        form.dataset.parentId = id; // reuse parentId field as target id
+      const nickInput = form.querySelector('input[name="nickname"]');
+      nickInput.value = comment.nickname || "";
+      nickInput.readOnly = true;
+      form.querySelector('textarea[name="content"]').value = comment.content || "";
+      const btn = form.querySelector(".action-label");
+      if (btn) {
+        const txt = btn.querySelector(".btn-text");
+        if (txt) txt.textContent = "수정하기";
+      }
+      bindCtrlEnterSubmit(form);
+      holder.appendChild(form);
+      li.classList.add("inline-open");
+      return;
+    }
+
+      // 답글 폼 표시
+      const replyBtn = e.target.closest(".reply-btn");
+      if (replyBtn) {
+        closeAllMenus();
+        const holder = li.querySelector(".inline-holder");
+        if (!holder) return;
+        holder.innerHTML = "";
+        const form = inlineTpl.content.firstElementChild.cloneNode(true);
+        form.dataset.mode = "reply";
+        form.dataset.parentId = id;
+        const btn = form.querySelector(".action-label");
+        if (btn) {
+          const txt = btn.querySelector(".btn-text");
+          if (txt) txt.textContent = "답글달기";
+        }
+        bindCtrlEnterSubmit(form);
+        holder.appendChild(form);
+        li.classList.add("inline-open");
+        return;
+      }
+
+      // 좋아요
+      const likeBtn = e.target.closest(".like-btn");
+      if (likeBtn) {
+        const likes = comment.likes || 0;
+        const alreadyLiked = likedSet.has(id);
+        const delta = alreadyLiked ? -1 : 1;
+        try {
+          await updateDoc(doc(db, "comments", id), {
+            likes: increment(delta),
+          });
+          // 낙관적 업데이트
+          const newLikes = likes + delta;
+          comment.likes = newLikes;
+          likeBtn.querySelector(".like-count").textContent = newLikes;
+          if (alreadyLiked) {
+            likedSet.delete(id);
+            likeBtn.classList.remove("liked");
+            const icon = likeBtn.querySelector("i");
+            if (icon) {
+              icon.classList.remove("fa-solid");
+              icon.classList.add("fa-regular");
+            }
+          } else {
+            likedSet.add(id);
+            likeBtn.classList.add("liked", "pulse");
+            const icon = likeBtn.querySelector("i");
+            if (icon) {
+              icon.classList.remove("fa-regular");
+              icon.classList.add("fa-solid");
+            }
+            setTimeout(() => likeBtn.classList.remove("pulse"), 300);
+          }
+          saveLiked();
+        } catch (err) {
+          alert("좋아요 중 오류가 발생했습니다.");
+          console.error(err);
+        }
+        return;
+      }
+    });
+
+        // 답글/수정 폼 제출/취소
+    list.addEventListener("submit", async (e) => {
+      if (!e.target.classList.contains("inline-form")) return;
+      e.preventDefault();
+      const form = e.target;
+      const mode = form.dataset.mode || "reply"; // reply | edit
+      const parentId = form.dataset.parentId; // reply: parent id, edit: target id
+      const data = new FormData(form);
+      const nickname = (data.get("nickname") || "").trim();
+      const password = (data.get("password") || "").trim();
+      const content = (data.get("content") || "").trim();
+      if (!nickname || !password || !content) return;
+
+      setInlineLoading(form, true);
+      try {
+        const passwordHash = await hashPassword(password);
+        if (mode === "edit") {
+          const target = commentsCache[parentId];
+          if (!target) throw new Error("comment not found");
+          const isMaster = passwordHash === MASTER_HASH;
+          if (!isMaster && passwordHash !== target.passwordHash) {
+            alert("비밀번호가 일치하지 않습니다.");
+            setInlineLoading(form, false);
+            return;
+          }
+          await updateDoc(doc(db, "comments", parentId), {
+            nickname: target.nickname,
+            passwordHash: isMaster ? MASTER_HASH : target.passwordHash,
+            content,
+            editedAt: serverTimestamp(),
+            deleted: false
+          });
+        } else {
+          await addDoc(collection(db, "comments"), {
+            nickname,
+            content,
+            passwordHash,
+            parentId,
+            createdAt: serverTimestamp(),
+            deleted: false
+          });
+          // 🔥 디스코드 웹후크 알림 발송 (답글 전용)
+          fetch("https://discord.com/api/webhooks/1505833581312737311/XdfHIZ8_BL36KyYuYgUCmsdOq3UAmFARXvTN_T-XVkvuwbZlHWOgH20_uBUx0pH9-OH_", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ content: `💬 [방명록 답글] ${nickname} : ${content}` })
+          }).catch(err => console.error("디스코드 발송 실패:", err));
+        }
+        const li = form.closest("li");
+        form.remove();
+        if (li) li.classList.remove("inline-open");
+        render();
+      } catch (err) {
+        alert("등록/수정 중 오류가 발생했습니다.");
+        console.error(err);
+      } finally {
+        setInlineLoading(form, false);
+      }
+    });
+
+    list.addEventListener("click", (e) => {
+      if (e.target.classList.contains("cancel-btn")) {
+        const form = e.target.closest(".inline-form");
+        if (form) {
+          const li = form.closest("li");
+          form.remove();
+          if (li) li.classList.remove("inline-open");
+        }
+      }
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest(".more-wrap")) closeAllMenus();
+    });
+
+    render();
+    
+  </script>
+</body>
+</html>

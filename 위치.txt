@@ -1,0 +1,610 @@
+할일 - 
+-어디에 게시할지? dfish143 ✅
+-올릴때의 설명이미지 정도 (뭐누르면 어디로, 뭐누르면 어디로 정도 설명?글로해도 될지도모름)
+-썸네일이미지 최적화해서 다시 업로드 ✅
+-영상/맵 url 영역 제대로 지정✅
+-공유할때 이미지 만들기 (카톡이나 url미리보기 썸넬)✅
+-모바일에서 잘보이는지체크✅
+
+-깃허브말고 다른데 올려도 파이어베이스 작동제대로하는가 등 체크
+-구글검색되게 저장
+-카카오맵 깃허브 말고 다른데에 올리면 도메인 추가등록필요
+-구글 애널리틱스 체크
+
+
+[등록글]
+현재는 유튜브 영상에 나온곳 위주로 57개 정도 등록 해두었다는!
+차차 업데이트 해 나갈 예정이고, 댓글이나 힘내맵 오른쪽하단의 방명록에서의
+제보도 받아요! 
+(개인적으로 하다보니 빠른 업뎃이 안될수도 있다는~)
+※아래 체크사항 꼭 확인해주시라는!!
+
+[체크사항]
+* 업체정보가 변경될 수 있으니 확인 후 방문 바란다는요!
+* 장소제보 (상호명,주소,있다면! 영상링크도 주시면 감사..!) 받는다는요!
+* 기타 문의 : devfish143@gmail.com
+
+
+✨✨✨✨✨✨✨✨✨✨ 업뎃 대기 목록✨✨✨✨✨✨✨✨✨✨
+
+
+
+
+
+🔰🔰🔰🔰🔰🔰폼🔰🔰🔰🔰🔰🔰
+
+장소 : ㅇㅇ 
+카카오맵 URL : 
+좌표 : ㄴㄴ
+설명 : ㄱㄱ
+카테고리 : 
+영상 URL : ㅁㅁ
+썸네일 :
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎯🎯🎯🎯🎯🎯등록완료🎯🎯🎯🎯🎯🎯
+
+
+
+
+🚩🚩🚩🚩🚩영상에 안나온곳🚩🚩🚩🚩🚩🚩
+
+장소 : 코하루 
+카카오맵 URL : https://place.map.kakao.com/843345495
+좌표 : 35.231997, 129.087414
+설명 : 매운돈코츠라멘 2단계(예린아씨픽)
+카테고리 : 식당
+영상 URL : 
+썸네일 : food_coha
+
+
+
+장소 : 구쯔구쯔(예라랑 생방추천)
+카카오맵 URL : https://place.map.kakao.com/58179172
+좌표 : 35.156296, 129.060243
+설명 : 돼지고기 스키야끼(식사/간술 굿! 조리상태서빙)
+카테고리 : 식당
+영상 URL : https://naver.me/Ge74cQAK
+썸네일 :food_gu
+
+
+장소 : 토비코(예라랑 생방추천)
+카카오맵 URL : https://place.map.kakao.com/8078343
+좌표 : 35.228757, 129.085867
+설명 : 크림새우알밥,라멘(예린픽),소고기알밥+볶은김치(가인픽)
+카테고리 : 식당
+영상 URL : https://naver.me/Ge74cQAK
+썸네일 :food_bab
+
+장소 : 순진한 칼국수(예라랑 생방추천)
+카카오맵 URL : https://place.map.kakao.com/1148146331
+좌표 : 35.196117, 129.064310
+설명 : 사골칼국수 (양 많음,김밥 속 단무지매움)
+카테고리 : 식당
+영상 URL : https://naver.me/Ge74cQAK
+썸네일 :food_guksu
+
+장소 : 뎐벼락막창(예라랑 생방추천)
+카카오맵 URL : https://place.map.kakao.com/8255792
+좌표 :35.156787, 129.060561
+설명 : 일반,양념반반+볶음밥
+카테고리 : 식당
+영상 URL : https://naver.me/Ge74cQAK
+썸네일 :food_mak
+
+
+장소 : 인자한키친(예라랑 생방추천)
+카카오맵 URL : https://place.map.kakao.com/464139498
+좌표 :35.237050, 129.086007
+설명 : 오믈렛,돈가스 (2인세트 추천)
+카테고리 : 식당
+영상 URL : https://naver.me/Ge74cQAK
+썸네일 :food_in
+
+
+장소 : 바오하우스(예라랑 생방추천)
+카카오맵 URL : https://place.map.kakao.com/950075258
+좌표 :35.154885, 129.063355
+설명 : 마파두부+볶음밥,우육탕면,바오
+카테고리 : 식당
+영상 URL : https://naver.me/Ge74cQAK
+썸네일 :food_bao
+
+
+장소 : 루아앤티그리(예라랑 생방추천)
+카카오맵 URL : https://place.map.kakao.com/474598513
+좌표 :35.162343, 129.191713
+설명 : 용두산 피자(주차장 넓음/예린아씨픽)
+카테고리 : 식당
+영상 URL : https://naver.me/Ge74cQAK
+썸네일 :food_ua
+
+
+장소 : 학장도가(예라랑 생방추천)
+카카오맵 URL : https://place.map.kakao.com/304919600
+좌표 :35.139504, 128.978880
+설명 : 콘치즈 폭탄비빔밥(고기세트 시키면 부위별제공/예린아씨픽)
+카테고리 : 식당
+영상 URL : https://naver.me/Ge74cQAK
+썸네일 :food_hak.png
+
+장소 : 오르디(예라랑 생방추천)
+카카오맵 URL : https://place.map.kakao.com/156844324
+좌표 :35.139687, 128.979161
+설명 : 브라우니 (양많음/분위기예쁨)
+카테고리 : 카페/디저트
+영상 URL : https://naver.me/Ge74cQAK
+썸네일 :food_or.png
+
+
+
+
+
+
+
+💙💙💙💙💙영상에 나온곳💙💙💙💙💙
+
+장소 : 두구화훼 꽃도매시장
+카카오맵 URL : https://place.map.kakao.com/8206653
+좌표 : 35.297609, 129.103958
+설명 : 유주나무 + 예쁜 카오스냥이 구경
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/uN5jnfMtYy4?si=uHH0YWmU8w1sGLgj&t=82
+썸네일 :cul_hwa
+
+
+장소 : 이흥용 LAB
+카카오맵 URL : https://place.map.kakao.com/257122030
+좌표 : 35.256489, 129.094654
+설명 : 발로나 초코바게트+포슬포슬 감자치즈
+카테고리 : 카페/디저트
+영상 URL : https://youtu.be/uN5jnfMtYy4?si=0zMo1tyYIsyqWBUc&t=401
+썸네일 :cafe_lab
+
+
+장소 : 부산대학교 조형관 
+카카오맵 URL : 
+좌표 : 35.232599, 129.075886
+설명 : 힘내맨의 탄생지! 
+카테고리 : 힘내맨 로고
+영상 URL : https://www.youtube.com/watch?v=E5qQgopwYMQ
+썸네일 :
+
+장소 : 우쭈쭈 
+카카오맵 URL : 
+좌표 : 35.230357, 129.085799
+설명 : 삽겹살 쭈꾸미(우동사리/치즈볶음밥)
+카테고리 : 식당
+영상 URL : https://youtu.be/lK7Ht3W_To8?si=jcb1FL4Gjj7ok8aN&t=185
+썸네일 :
+
+장소 : 설빙 
+카카오맵 URL : https://kko.to/KP83hSSpVw
+좌표 : 35.229582, 129.087843
+설명 : 메이플설빙(단종)
+카테고리 : 카페/디저트/디저트
+영상 URL : https://youtu.be/lK7Ht3W_To8?si=jcb1FL4Gjj7ok8aN&t=185
+썸네일 :
+
+
+장소 : 스페로스페라 
+카카오맵 URL : https://place.map.kakao.com/25411964
+좌표 : 35.230534, 129.083902
+설명 : 누텔라+초코 아이스크림+치즈케익+딸기 
+카테고리 : 카페/디저트/디저트
+영상 URL : https://youtu.be/g975a0VkRz4?si=Zy9qoV2OCz0vOGQ_&t=807
+썸네일 :
+
+장소 : 온천천 산책코스 
+카카오맵 URL : https://kko.to/r1ePfMoAyU
+좌표 : 35.241961, 129.089766
+설명 : 시작->장전역 3번출구->부산대역 3번출구
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/g975a0VkRz4?si=qEMDH6MEx-JBedqL&t=21
+썸네일 :
+
+장소 : 수림식당 본점 
+카카오맵 URL : https://place.map.kakao.com/1720617005
+좌표 : 35.226660, 129.077767
+설명 : 기본맛탄탄멘 + 가지만두
+카테고리 : 식당
+영상 URL : https://youtu.be/fnkHoShNbAg?si=XMQtQRdMSmFoQiJS&t=68
+썸네일 : food_su.png
+
+
+장소 : 하녹 (한옥카페) 
+카카오맵 URL : https://place.map.kakao.com/1140230507
+좌표 : 35.217303, 129.199699
+설명 : 떡구이+곶감말이+산도끼케잌+양갱+두유호두라떼+고흥유자석류+오미자에이드 등
+카테고리 : 카페/디저트
+영상 URL : https://youtu.be/U2x5EEhMgvs?si=4apYLpf_vFHJ_wBC&t=379
+썸네일 : cafe_ha
+
+
+
+장소 : 아빠짬뽕 
+카카오맵 URL : https://place.map.kakao.com/1571334913
+좌표 : 35.206995, 129.207240
+설명 : 짬뽕+탕수육
+카테고리 : 식당
+영상 URL :https://youtu.be/U2x5EEhMgvs?si=S86McMoNCSu9Er-E&t=1690
+썸네일 : food_ah.png
+
+
+장소 : 궁디팡팡 캣페스타 
+카카오맵 URL : https://place.map.kakao.com/27446157
+좌표 : 35.169003, 129.136095
+설명 : 매년 벡스코에서 열리는 캣페스타!
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/QGl5mcnjgdA?si=fvvri1IaFm8fwlt4&t=109
+썸네일 : cul_cat.png
+
+
+
+장소 : 제줏간 서면점 
+카카오맵 URL : https://place.map.kakao.com/820273132
+좌표 : 35.154853, 129.055670
+설명 : ㄱㄱ
+카테고리 : 식당
+영상 URL : https://youtu.be/Ba4eu6BwXT0?si=eDov4LXCbovMQSsF&t=613
+썸네일 : food_jeju.png
+
+
+
+
+장소 : 원조소문난칼국수 
+카카오맵 URL : https://place.map.kakao.com/16725982
+좌표 : 35.221461, 129.084513
+설명 : 칼국수
+카테고리 : 식당
+영상 URL : https://youtu.be/Nyb28WssWqo?si=btpjvXxStKK-4xRx&t=701
+썸네일 : food_cal.png
+
+
+장소 : 다이소 홈플러스 동래점  
+카카오맵 URL : https://place.map.kakao.com/1086258790
+좌표 : 35.221322, 129.085632
+설명 : 파우치,머리끈 등 구매! 근처 칼국수집 가기전 쇼핑~
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/Nyb28WssWqo?si=YkF6DgNVNk-4oDic&t=652
+썸네일 : cul_dai.png
+
+
+
+장소 : 요코 (카레/일식) 
+카카오맵 URL : https://place.map.kakao.com/596401302
+좌표 : 35.206241, 129.081064
+설명 : 야채구이 토핑추가한 카레
+카테고리 : 식당
+영상 URL : https://youtu.be/R7LwBr9g59I?si=zZAsFK5leuFVjj8W&t=275
+썸네일 : food_ca.png
+
+
+장소 : 현대 드라이빙라운지 부산동부
+카카오맵 URL : https://place.map.kakao.com/2007984227
+좌표 : 35.252489, 129.090955
+설명 : 가인앗쉬의 캐스퍼 시승!
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/m_z1ZUgC6EY?si=ICZRNgW8zuoWUITr&t=903
+썸네일 : cul_cas.png
+
+
+장소 : 더 퍼비드(썬팅 샵)
+카카오맵 URL : https://place.map.kakao.com/2045743601
+좌표 : 35.241717, 129.088353
+설명 : 뻘렁구 썬팅시공!
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/OCVQdu_r5kc?si=XwypFnVgmpC7r4aB&t=151
+썸네일 : cul_sun.png
+
+
+장소 : 더 샤인 디테일링 (디테일링 세차) 
+카카오맵 URL : https://place.map.kakao.com/1882937810
+좌표 : 35.241710, 129.087949
+설명 : 뻘렁구 세차(※셀프세차 업체아닙니다!)
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/vmAHVfaesmA?si=J7uGBPeMsLaWM7_h&t=49
+썸네일 : cul_wash.png
+
+
+장소 : 동부유기동물 보호협회
+카카오맵 URL : https://place.map.kakao.com/1177971522
+좌표 : 35.194838, 129.206318
+설명 : 예랑가랑과 도갓시가 봉사활동한 장소!
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/7RxQVLZZDc8?si=EH7SbtEAvfulXbOV&t=143
+썸네일 : cul_dogcat.png
+
+
+장소 : 화덕 303 초읍점 
+카카오맵 URL : https://place.map.kakao.com/167679769
+좌표 : 35.182697, 129.049900
+설명 : 샐러드피자+마레토마토 파스타
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/qG2XrmJ-_lo?si=deJupYAAIYCJAtVk&t=530
+썸네일 : food_pas.png
+
+
+장소 : 야마벤또 부산대  포토그레이
+카카오맵 URL : https://place.map.kakao.com/23636668
+좌표 : 35.231033, 129.084791
+설명 : 야마벤또 (모든재료가 들어간 메뉴!)
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/P86XqUu8ysE?si=xEpvKZmYFN5NQYCt&t=51
+썸네일 : food_yama.png
+
+
+장소 : 북카페 심심푸리 부산대역점 
+카카오맵 URL : https://place.map.kakao.com/1302512592
+좌표 : 35.229521, 129.089102
+설명 : 초코라떼
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/P86XqUu8ysE?si=yduEobc5evT5eJXi&t=113
+썸네일 : cul_book.png
+
+
+장소 : 포토그레이 
+카카오맵 URL : https://place.map.kakao.com/386983355
+좌표 : 35.230628, 129.087028
+설명 : 먼작귀 테마 네컷촬영!
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/P86XqUu8ysE?si=lzeAKbgNjswWWX_P&t=260
+썸네일 : cul_photo.png
+
+
+장소 : OX 피시 부산대2호점 
+카카오맵 URL : https://place.map.kakao.com/1837223257
+좌표 : 35.230464, 129.087687
+설명 : 치즈틈새라면+콘치즈쌀떡+물
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/P86XqUu8ysE?si=BVh9kVgrEnwVxp6w&t=329
+썸네일 : cul_raman.png
+
+
+장소 : 라마앤바바나 서면점
+카카오맵 URL : https://place.map.kakao.com/18773207
+좌표 : 35.153777, 129.061895
+설명 : 카레+난+피자+라씨
+카테고리 : 식당
+영상 URL : https://youtu.be/VSuOWJdo488?si=koV1k0SoYoZ7zFWd&t=641
+썸네일 : food_care.png
+
+
+장소 : 부산대 경암체육관 앞 
+카카오맵 URL : https://place.map.kakao.com/26773197
+좌표 : 35.233183, 129.075314
+설명 : "돌발돌발! 노브라 단속구간에 진입하셨습니다"
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/QAgAf1N4R_Q?si=x-QZtIYEDMN4_wA-&t=253
+썸네일 : cul_nobra.png
+
+
+
+장소 : 감천제빵소 앞  
+카카오맵 URL : https://place.map.kakao.com/26773197
+좌표 : 35.098508, 129.009009
+설명 : 고양이 동상 앞 (동상은 사라짐)
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/OqWj09gp-Ec?si=9-dz_aP2yNrzQR1M&t=41
+썸네일 : cul_gamload.png
+
+
+장소 : 용두산 공원 올라가는 계단 
+카카오맵 URL : https://place.map.kakao.com/11339636
+좌표 : 35.099766, 129.033337
+설명 : 예랑가랑조씨가 오른 길!
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/OqWj09gp-Ec?si=3Z5e6L-yk3bP9Obo&t=53
+썸네일 : cul_yong.png
+
+장소 : 용두산 공원 에스컬레이터 
+카카오맵 URL : https://place.map.kakao.com/794104331
+좌표 : 35.098884, 129.033557
+설명 : 예랑가랑조씨가 오른 길!
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/OqWj09gp-Ec?si=s-hEIGWbQCUyJQu0&t=52
+썸네일 : cul_yonge.png
+
+장소 : 이재모피자 본점 
+카카오맵 URL : https://place.map.kakao.com/10070964
+좌표 : 35.102117, 129.030594
+설명 : 불고기피자+크림해물&페퍼로니스파게티(추정)
+카테고리 : 식당
+영상 URL : https://youtu.be/OqWj09gp-Ec?si=qLWVQOdJ5eefOm6c&t=68
+썸네일 : cul_yongp.png
+
+
+장소 : 깡통시장 
+카카오맵 URL :https://place.map.kakao.com/837490557
+좌표 : 35.101861, 129.025867
+설명 : 십원빵+치즈꼼장어+애플수박주스+홍콩에그와플
+카테고리 : 식당
+영상 URL : https://youtu.be/OqWj09gp-Ec?si=U3lEgTMiMPLE0-en&t=76
+썸네일 : cul_gang.png
+
+
+
+
+장소 : 스튜디오 홍아필름
+카카오맵 URL : https://place.map.kakao.com/460792062
+좌표 : 35.153713, 129.064943
+설명 : 예린아씨의 바디프로필 도전
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/ov0336h6qFU?si=DM4_3z-F5U2KKn3t&t=418
+썸네일 : cul_hong.png
+
+
+장소 : 이재모피자 서면점
+카카오맵 URL : https://place.map.kakao.com/413556366
+좌표 : 35.155343, 129.063999
+설명 : 이재모 크러스트 피자+베이컨크림 치즈스파게티+왕불갈비피자
+카테고리 : 식당
+영상 URL : https://youtu.be/KrHCjHdW5O4?si=Lwxu83tyK2O80VyG&t=930
+썸네일 : food_epiz.png
+
+
+
+장소 : 라화쿵부 부산서면중앙점
+카카오맵 URL : https://place.map.kakao.com/1619242871
+좌표 : 35.154606, 129.060184
+설명 : 마라탕(예린2/가인1단계)+미니꿔바로우
+카테고리 : 식당
+영상 URL : https://youtu.be/CoaSDq4gE2w?si=u_qOd-0dG3qeF-lX&t=48
+썸네일 : food_mara.png
+
+
+
+장소 : 나의피는 라멘으로되어있어(폭식원)
+카카오맵 URL : https://place.map.kakao.com/866579402
+좌표 : 35.153272, 129.062211
+설명 : 지로케 쇼유라멘 
+카테고리 : 식당
+영상 URL : https://youtu.be/i8LXqQgZlfs?si=-OSHnKJdAK0jYgpa&t=60
+썸네일 : food_pokra.png
+
+장소 : 달조리법 부산전포점(폭식원)
+카카오맵 URL : https://place.map.kakao.com/1140704246
+좌표 : 35.155341, 129.066080
+설명 : 로투스냉동딸기 크레페+수제 바닐라빈 라떼
+카테고리 : 카페/디저트
+영상 URL : https://youtu.be/i8LXqQgZlfs?si=pmwfIPMgpd3UcS_i&t=259
+썸네일 : food_dal.png
+
+
+장소 : KFC 부산서면점(폭식원)
+카카오맵 URL : https://place.map.kakao.com/25429738
+좌표 : 35.153605, 129.058890
+설명 : 징거더블다운맥스(단종)+버터비스킷
+카테고리 : 식당
+영상 URL : https://youtu.be/i8LXqQgZlfs?si=vi9kqgJYQx9DRa3L&t=1483
+썸네일 : food_ham.png
+
+
+장소 : 벌툰 서면본점(폭식원)
+카카오맵 URL : https://place.map.kakao.com/858335245
+좌표 : 35.155264, 129.060691
+설명 : 복숭아 아이스티+소떡+콜팝(서비스)
+카테고리 : 식당
+영상 URL : https://youtu.be/i8LXqQgZlfs?si=WReywd5VGdAt4zdW&t=969
+썸네일 : food_so.png
+
+
+장소 : 솥이랑 (삼정타워/가인아씨생일)
+카카오맵 URL :https://place.map.kakao.com/272261098
+좌표 : 35.152946, 129.059568
+설명 : 갈매기살 솥밥
+카테고리 : 식당
+영상 URL : https://youtu.be/0lG-37rx1TQ?si=SN8EYWPXjdOKNqiA&t=248
+썸네일 : food_sot
+
+
+장소 : 스타벅스 서면중앙대로R점(가인아씨생일)
+카카오맵 URL : https://place.map.kakao.com/117324150
+좌표 : 35.152797, 129.059514
+설명 : 초코라떼 아이스 Tall
+카테고리 : 카페/디저트
+영상 URL : https://youtu.be/0lG-37rx1TQ?si=wlKUCBlQxUkhYxyY&t=489
+썸네일 : food_star.png
+
+장소 : 비비디 스튜디오(가인아씨생일)
+카카오맵 URL : https://naver.me/FUhsrZQD
+좌표 : 35.154644, 129.061575
+설명 : 가인아씨 증명사진+우정사진
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/0lG-37rx1TQ?si=j8ORhQq1Jsg2RA1Y&t=643
+썸네일 : cul_stu.png
+
+
+장소 : 서면 APL컬러
+카카오맵 URL : https://place.map.kakao.com/1514605751
+좌표 : 35.157504, 129.060451
+설명 : 예린아씨의 퍼스널컬러진단!
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/MBaCTyE9MpU?si=20jz7jCPdA4qPJz5&t=89
+썸네일 : cul_co.png
+
+
+
+
+장소 : 롯데리아 홈플러스 센텀시티점
+카카오맵 URL : https://place.map.kakao.com/21606173
+좌표 : 35.170959, 129.133702
+설명 : 리아불고기/치킨버거세트
+카테고리 : 식당
+영상 URL : https://youtu.be/8BB3CEXmO10?si=j_v0b417dWa4Jo5Q&t=109
+썸네일 : food_lot
+
+장소 : 이마트 트레이더스 홀세일 클럽 서면점
+카카오맵 URL : https://place.map.kakao.com/16533251
+좌표 : 35.164076, 129.052631
+설명 : 친구들과 함께 대용량 창고형 마트 털었습니다.
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/Ov60zG0x_Xo?si=N-fwCsCXFUY5SM9r&t=207
+썸네일 : cul_e.png
+
+
+장소 : 해운대 L7호텔
+카카오맵 URL : https://place.map.kakao.com/2008755459
+좌표 : 35.160121, 129.160093
+설명 : 해운대에서의 호캉스~!
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/0qX_rQsHqCI?si=Rkw6pp0MoB3_XCTY&t=106
+썸네일 : cul_l7
+
+장소 : 해운대 선물가게
+카카오맵 URL : https://place.map.kakao.com/2099634959
+좌표 : 35.159051, 129.160187
+설명 : 바다소금 캬라멜 
+카테고리 : 문화/여가
+영상 URL : [https://youtu.be/0qX_rQsHqCI?si=4BuHpwRzHcKos13z&t=442]()
+썸네일 : cul_gift.png
+
+장소 : 해운대 앞바다
+카카오맵 URL : https://place.map.kakao.com/7913306
+좌표 : 35.158907, 129.160685
+설명 : 해운대 글자앞에서 점프샷~!
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/0qX_rQsHqCI?si=wRIYUm5hQz2BhDPD&t=317
+썸네일 : cul_sea.png
+
+
+장소 : 부산남부 면허시험장
+카카오맵 URL : https://place.map.kakao.com/1794679536
+좌표 : 35.127696, 129.105687
+설명 : 예린아씨가 필기시험 치러 간 시험장!
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/R7LwBr9g59I?si=ctJDMtvubvsH0BJ0&t=78
+썸네일 : cul_cartest.png
+
+장소 : 이케아 동부산점
+카카오맵 URL : https://place.map.kakao.com/1652255242
+좌표 : 35.191337, 129.210490
+설명 : 구름무드등+초콜릿크런치/쫀득초코케이크 등
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/aP1NzrY65r8?si=4NdHjMhKPFaXTtSR&t=555
+썸네일 : cul_ik.png
+
+장소 : 스시로 서면점(삼정타워)
+카카오맵 URL : https://place.map.kakao.com/114480870
+좌표 :35.152667, 129.059830
+설명 : 참치/연어알군함/농어/새우치즈 초밥 
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/aP1NzrY65r8?si=75n8TBCgqI96wi4o&t=206
+썸네일 : food_sushi.png
+
+
+**********************
+
+
