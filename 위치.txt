@@ -1,5 +1,5 @@
 ✨✨✨✨✨✨✨✨✨✨ 업뎃 대기 목록✨✨✨✨✨✨✨✨✨✨
-
+https://www.findlatlng.org/  < 위경도 찾기
 
 
 🔰🔰🔰🔰🔰🔰폼🔰🔰🔰🔰🔰🔰
@@ -11,6 +11,7 @@
 카테고리 : 
 영상 URL : ㅁㅁ
 썸네일 :
+
 
 
 
@@ -603,7 +604,6 @@
 영상 URL : https://naver.me/Ge74cQAK
 썸네일 :food_ua
 
-
 장소 : 학장도가(예라랑 생방추천)
 카카오맵 URL : https://place.map.kakao.com/304919600
 좌표 :35.139504, 128.978880
@@ -619,6 +619,14 @@
 카테고리 : 카페/디저트
 영상 URL : https://naver.me/Ge74cQAK
 썸네일 :food_or.png
+
+장소 : 웨이브락 남천점  
+카카오맵 URL : https://place.map.kakao.com/1473458003
+좌표 : 35.139922689828,129.106485451927
+설명 : 부산대보다 넓고 난이도 있는 실내 클라이밍장
+카테고리 : 문화/여가
+영상 URL : https://youtu.be/huc4yTOGLBA?si=DvTiQe9VTxQ1Saae&t=1252
+썸네일 : wav_nam.png
 
 
 
